@@ -50,7 +50,7 @@ html::-webkit-scrollbar-thumb{
 }
 /* boton login */
 .btn{
-    width: 100%;
+   
     margin-top: 1rem;
     display: inline-block;
     padding: .9rem 3rem;
@@ -218,7 +218,7 @@ html::-webkit-scrollbar-thumb{
     justify-content: center;
     background: rgba(255,255,255,9);
     position: fixed;
-    top:0;left: 0;
+    top:0;right: -105%;
     z-index: 10000;
     height: 100%;
     width: 100%;
@@ -269,7 +269,7 @@ html::-webkit-scrollbar-thumb{
     color: var(--light-color);
     cursor: pointer;
 }
-.login-form-container form btn{
+.login-form-container form .btn{
     text-align: center;
     width: 100%;
     margin:1.5rem 0;
@@ -286,11 +286,39 @@ html::-webkit-scrollbar-thumb{
     text-decoration: underline;
 }
 
+.login-form-container #close-login-btn{
+
+    position: absolute;
+    top: 1.5rem;
+    right: var(--size);
+    font-size: 5rem;
+    color: var(--black);
+    cursor: pointer;
+
+}
+
+/** clase para Activar ventana al login**/
+
+.login-form-container.active{
+    
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
 
 
 
 
 /*                 MEDIA QUERIES          */
+
+/* Desktop */
 
 @media(max-width:1024px){
     html{
@@ -300,6 +328,10 @@ html::-webkit-scrollbar-thumb{
         padding:2rem ;
     }
 }
+
+
+
+/* TABLET */
 
 @media(max-width:768px){
     html{
@@ -340,6 +372,15 @@ html::-webkit-scrollbar-thumb{
     display: block;
   }
 }
+
+
+
+
+
+
+
+
+/* MOBILE */
 
 @media(max-width:450px){
     html{
