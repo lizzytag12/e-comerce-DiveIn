@@ -123,4 +123,31 @@ window.onload= () =>{
            },
          },
        });
+
+       
+      /* newletter books */
+
+      var swiper = new Swiper(".arrivals-slider", {
+        loop:true,
+        centeredSlides:true,
+        autoplay:{
+         delay:5500,
+         disableOnInteraction:false,
+        },
+         breakpoints: {
+           0: {
+             slidesPerView: 1,
+             
+           },
+           768: {
+             slidesPerView: 2,
+            
+           },
+           1024: {
+             slidesPerView: 3,
+            
+           },
+         },
+       });
+
    
