@@ -48,6 +48,8 @@ window.onscroll = () =>{
     else{
         document.querySelector('.header .header-2').classList.remove('active')
     }
+
+    fadeOut();
      
 }
 
@@ -59,9 +61,17 @@ window.onload= () =>{
     }else{
         document.querySelector('.header .header-2').classList.remove('active')
     }
-     
+    fadeOut()
 }
+ // captuto el div de load y le agrego la clase active
+function loader(){
+  document.querySelector('.loader-container').classList.add('active')
+}
+//creo una funcion que tomara la funcion anterior y la ejecutara en tiempo 
+function fadeOut(){
 
+  setTimeout(loader, 2000); // setTimeout :método incorporado que permite temporizar la ejecución de una determinada función 
+}
 
 
 
@@ -178,7 +188,7 @@ window.onload= () =>{
      });
 
 
-      /*   reviews script  */
+      /*  blogs script  */
       var swiper = new Swiper(".blogs-slider", {
         spaceBetween:10,
         grabCursor:true, 
@@ -203,3 +213,6 @@ window.onload= () =>{
            },
          },
        });
+
+
+   
