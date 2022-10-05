@@ -4,15 +4,18 @@
 /* variables */
 :root{
 
-    --green: #27ae60;
-    --dark-color:#219150;
+    --green: #E26A2C;
+    --dark-color:#FF5403;
     --black:#444;
     --light-color:#666;
     --border: .1rem solid rgba(0,0,0,.1);
     --border-hover: 0.1rem solid var(--black);
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     --size:2.5rem;
-    --neutral : #fff;
+    --neutral : #ffff;
+    --color-home:#E6BA95;
+    --previusPrice : #f50000;
+    --currentPrice:#0b8303;
 
 }
 /* estilos por defecto */
@@ -320,7 +323,7 @@ section{
  }
 
  .home{
-    background: rgb(240, 227, 236) no-repeat;
+    background: var(--color-home) no-repeat;
     /* background: url('/image/banners/baner-2.jpg') no-repeat; */
     background-size:cover;
     background-position: center; 
@@ -452,7 +455,7 @@ section{
  */
 
  .featured .featured-slider .box{
-    width: 25rem;
+    
     margin: 2rem 0;
     position: relative;
     overflow: hidden;
@@ -537,14 +540,14 @@ section{
 
  .featured .featured-slider .box .content .price{
     font-size: 2rem;
-    color: var(--black);
+    color: var(--currentPrice);
     padding-top: 1rem;
  }
 
  .featured .featured-slider .box .content .price span{
 
     font-size: 1.5rem;
-    color: var(--light-color);
+    color: var(--previusPrice);
     text-decoration: line-through;
  }
 

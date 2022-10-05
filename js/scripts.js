@@ -104,10 +104,11 @@ function fadeOut(){
       /* features books */
 
       var swiper = new Swiper(".featured-slider", {
+        spaceBetween:10,
         loop:true,
         centeredSlides:true,
         autoplay:{
-         delay:5500,
+         delay:9500,
          disableOnInteraction:false,
         },
         navigation: {
@@ -128,7 +129,7 @@ function fadeOut(){
             
            },
            1024: {
-             slidesPerView: 5,
+             slidesPerView: 4,
             
            },
          },
